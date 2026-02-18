@@ -4,8 +4,8 @@ import httpx
 
 app = Flask(__name__)
 
-BOT_TOKEN = os.environ["BOT_TOKEN"]
-GROQ_API_KEY = os.environ["GROQ_API_KEY"]
+BOT_TOKEN = os.environ["8319299806:AAHfKdzaUTZnhOZ_TlQPqoIBNToqQrjm6d8"]
+GROQ_API_KEY = os.environ["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"]
 SECRET = os.environ.get("SECRET", "my_secret_path_12345")
 
 def transcribe_audio(file_url: str) -> str:
@@ -67,4 +67,5 @@ def webhook():
 **Также обнови `requirements.txt`:**
 ```
 Flask==3.0.0
+
 httpx==0.27.0
